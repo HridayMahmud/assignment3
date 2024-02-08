@@ -1,282 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assigment3</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css"
+      rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-  p{
+  p,h1{
     font-weight: 400;
     font-family: Manrope;
   }
 </style>
-</head>
-<body>
-   <div class="lg:w-[1170px] lg:mx-auto">
 
-    <header class="">
-        <div class="carousel w-full h-[550px]">
-            <div id="slide1" class="carousel-item relative w-full">
-              <img src="B-9 A-3 resources/Images/pic1.png" class="w-full h-auto lg:w-full " />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full">
-              <img  src="B-9 A-3 resources/Images/hocky2.jpg" class="w-full rounded-[16px]" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full">
-              <img src="B-9 A-3 resources/Images/hocky3.jpg" class="w-full rounded-[16px]" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">❮</a> 
-                <a href="#slide4" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
-            <div id="slide4" class="carousel-item relative w-full">
-              <img src="B-9 A-3 resources/Images/hocky4.jpg" class="w-full rounded-[16px]" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a> 
-                <a href="#slide1" class="btn btn-circle">❯</a>
-              </div>
+  </head>
+  <body>
+    <div class="mx-5 lg:w-[1170px] lg:mx-auto">
+     
+      <!-- navbar -->
+      <nav class="w-[220px] gap-3 items-center lg:gap-0  lg:w-full flex justify-between  pb-14 pt-14">
+        <div class="dropdown block lg:hidden">
+          <div tabindex="0" role="button" class="btn m-1"><i class="fa-solid fa-bars"></i></div>
+          <ul tabindex="0" class=" dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About </a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <h1 class="text-2xl lg:text-4xl  font-extrabold">Hockey’s</h1>
+
+        <ul style="font-weight: 400;" class=" hidden  lg:flex gap-10 text-[16px] text-[#424247] ">
+          <li class="text-[#FF4240] font-bold"><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Pages</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+        <div class="flex gap-5 items-center ">
+          <i class=" hidden lg:block fa-solid fa-magnifying-glass"></i>
+          <button class="btn bg-[#FF4240] text-white">Get Ticket</button>
+        </div>
+      </nav>
+
+      <header class="">
+        <div class="h-[200px]  carousel w-full lg:h-[550px]">
+          <div id="slide1" class=" carousel-item relative w-full">
+
+            <div class="-bottom-36 mx-auto lg:right-8 lg:bottom-8 p-8  text-white banner absolute w-[280px] h-[130px] lg:w-[560px] lg:h-[165px] bg-[#131318] rounded-2xl ">
+              <h1 class="text-[10px] lg:text-xl mb-4 font-bold">Meet all the heroes from the field</h1>
+              <p  class="text-[10px] ">Hockey Heroes is an eight week hockey programme aimed at beginners</p>
+            </div>
+            <img src="B-9 A-3 resources/Images/pic1.png"
+              class="w-full h-auto lg:w-full " />
+            <div class="absolute  flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-    </header>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="B-9 A-3 resources/Images/hocky2.jpg"
+              class="w-full rounded-[16px]" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="B-9 A-3 resources/Images/hocky3.jpg"
+              class="w-full rounded-[16px]" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="B-9 A-3 resources/Images/hocky4.jpg"
+              class="w-full rounded-[16px]" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </header>
 
-    <!-- <div class="">
+      <!-- <div class="">
       
     </div> -->
-    <main>
+      <main class="">
         <!-- professional-hocky-section -->
         <section class="text-center font-[manrope] text-[#131318] mt-[100px]">
-            <h1 class="mb-6 font-extrabold text-4xl">Professional Hockeys Club</h1>
-            <p class=" mb-7 text-sm font-semibold mx-7 lg:px-[280px] ">Two minutes for minor infractions. Skills required to play floor hockey include passing, receiving passes, shooting, stick handling, defensive skills and goaltending.</p>
+          <h1 class="mb-6 font-extrabold text-4xl">Professional Hockeys
+            Club</h1>
+          <p class=" mb-7 text-sm font-semibold mx-7 lg:px-[280px] ">Two minutes
+            for minor infractions. Skills required to play floor hockey include
+            passing, receiving passes, shooting, stick handling, defensive
+            skills and goaltending.</p>
         </section>
 
         <section>
-           
-           <div class="flex flex-col lg:flex-row md:flex-row justify-between lg:px-24 ">
-            <div class="text-[#131318] font-[manrope] flex flex-col items-center">
-                <div class=" mb-6 radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
-            <h3 class="mb-4 font-semibold text-[20px] ">Prayer facility</h3>
-            <p class=" text-sm mb-4">Prayer facility is good.</p>
+
+          <div
+            class="flex flex-col lg:flex-row md:flex-row justify-between lg:px-24 ">
+            <div
+              class="text-[#131318] font-[manrope] flex flex-col items-center">
+              <div class=" mb-6 radial-progress text-[#FF4240]"
+                style="--value:87;" role="progressbar">87%</div>
+              <h3 class="mb-4 font-semibold text-[20px] ">Prayer facility</h3>
+              <p class=" text-sm mb-4">Prayer facility is good.</p>
             </div>
 
-            <div class="text-[#131318] font-[manrope] flex flex-col items-center">
-                <div class="mb-6 radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
-            <h3 class="mb-4 font-semibold text-[20px] ">Experienced Coach</h3>
-            <p class=" text-sm mb-4">There are many Experienced coaches here.</p>
+            <div
+              class="text-[#131318] font-[manrope] flex flex-col items-center">
+              <div class="mb-6 radial-progress text-[#49D293]"
+                style="--value:95;" role="progressbar">95%</div>
+              <h3 class="mb-4 font-semibold text-[20px] ">Experienced Coach</h3>
+              <p class=" text-sm mb-4">There are many Experienced coaches
+                here.</p>
             </div>
-            <div class="text-[#131318] font-[manrope] flex flex-col items-center">
-                <div class="mb-6 radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
-            <h3 class="mb-4 font-semibold text-[20px] ">Senior Player</h3>
-            <p class=" text-sm mb-4">Many help from Senior player.</p>
+            <div
+              class="text-[#131318] font-[manrope] flex flex-col items-center">
+              <div class="mb-6 radial-progress text-[#FFB546]"
+                style="--value:90;" role="progressbar">90%</div>
+              <h3 class="mb-4 font-semibold text-[20px] ">Senior Player</h3>
+              <p class=" text-sm mb-4">Many help from Senior player.</p>
             </div>
-            <div class="text-[#131318] font-[manrope] flex flex-col items-center">
-                <div class="mb-6 radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
-            <h3 class="mb-4 font-semibold text-[20px] ">Training ground</h3>
-            <p class=" text-sm pb-4 ">A wonderful training ground is available here.</p>
+            <div
+              class="text-[#131318] font-[manrope] flex flex-col items-center">
+              <div class="mb-6 radial-progress text-[#4C8DF1]"
+                style="--value:80;" role="progressbar">80%</div>
+              <h3 class="mb-4 font-semibold text-[20px] ">Training ground</h3>
+              <p class=" text-sm pb-4 ">A wonderful training ground is available
+                here.</p>
             </div>
-           </div>
+          </div>
         </section>
         <!-- program-section -->
         <section class="text-center font-[manrope] text-[#131318] mt-[100px]">
-            <h1 class="mb-[24px] font-extrabold text-4xl">Program Sections</h1>
-            <p class=" mb-[30px] text-sm font-semibold lg:px-[280px]">Two minutes for minor infractions. Skills required to play floor hockey include passing, receiving passes, shooting, stick handling, defensive skills and goaltending.</p>
+          <h1 class="mb-[24px] font-extrabold text-4xl">Program Sections</h1>
+          <p class=" mb-[30px] text-sm font-semibold lg:px-[280px]">Two minutes
+            for minor infractions. Skills required to play floor hockey include
+            passing, receiving passes, shooting, stick handling, defensive
+            skills and goaltending.</p>
         </section>
 
-<!-- program-card-section -->
+        <!-- program-card-section -->
 
-<section>
-<div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
+        <section>
+          <div class=" grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
 
-    <div class="card  lg:w-[570px] bg-base-100 shadow-xl image-full col-span-2 lg:col-span-1">
-        <figure><img  src="B-9 A-3 resources/Images/pic2.png" alt="hockey" /></figure>
-        <div class="card-body pt-24 pl-10 pb-12">
-          <h2 class="card-title text-white text-2xl font-extrabold mb-4">Junior Program</h2>
-          <p class="text-sm mb-8">The goals of junior hockey are to promote, develop, and administer the domestic USA Hockey program for junior-aged players, teams, and leagues. USA Hockey's Junior Program is available to athletes who are at least 16 years of age and no older than 20 as of the 31st day of December of the current season of competition.</p>
-          <div class="card-actions justify-start">
-            <button  class=" w-48 rounded-lg py-2 bg-[#FF4240] text-white">Register Now!</button>
+            <div class="card relative bg-base-100 shadow-xl image-full col-span-2 lg:col-span-1">
+              <figure><img src="B-9 A-3 resources/Images/pic2.png"
+                  alt="hockey" /></figure>
+              <div class="card-body pt-24 pl-10 pb-12 absolute bottom-8 ">
+                <h2
+                  class="card-title text-white text-2xl font-extrabold mb-4">Junior
+                  Program</h2>
+                <p class="text-sm mb-8">The goals of junior hockey are to
+                  promote, develop, and administer the domestic USA Hockey
+                  program for junior-aged players, teams, and leagues. USA
+                  Hockey's Junior Program is available to athletes who are at
+                  least 16 years of age and no older than 20 as of the 31st day
+                  of December of the current season of competition.</p>
+                <div class="card-actions justify-start">
+                  <button
+                    class=" w-48 rounded-lg py-2 bg-[#FF4240] text-white">Register
+                    Now!</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card relative bg-base-100 shadow-xl image-full col-span-2 lg:col-span-1">
+              <figure><img src="B-9 A-3 resources/Images/pic3.png"
+                  alt="hockey" /></figure>
+              <div class="card-body pt-24 pl-10 pb-12 absolute bottom-8">
+                <h2
+                  class="card-title text-white text-2xl font-extrabold mb-4">Teenager
+                  Program</h2>
+                <p class="text-sm mb-8">Youth hockey sessions are designed for
+                  House/Recreational youth hockey players to experience extra
+                  time on the ice while continuing skill development.</p>
+                <div class="card-actions justify-start">
+                  <button
+                    class="  w-48 rounded-lg py-2 bg-[#FF4240] text-white">Register
+                    Now!</button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="card relative bg-base-100 shadow-xl image-full col-span-2">
+              <figure><img src="B-9 A-3 resources/Images/pic4.png"
+                  alt="hockey" /></figure>
+              <div class="card-body pt-56 absolute bottom-8">
+                <h2
+                  class="card-title text-white text-2xl font-extrabold mb-4">Teenager
+                  Program</h2>
+                <p class="text-sm">Youth hockey sessions are designed for<br>
+                  House/Recreational youth hockey players to experience extra
+                  time on the ice while continuing skill development.</p>
+                <div class="card-actions justify-start">
+                  <button
+                    class="  w-48 rounded-lg py-2 bg-[#FF4240] text-white">Register
+                    Now!</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <div class="card lg:w-[570px] bg-base-100 shadow-xl image-full col-span-2 lg:col-span-1">
-        <figure><img src="B-9 A-3 resources/Images/pic3.png" alt="hockey" /></figure>
-        <div class="card-body pt-24 pl-10 pb-12">
-          <h2 class="card-title text-white text-2xl font-extrabold mb-4">Teenager Program</h2>
-          <p class="text-sm mb-8">Youth hockey sessions are designed for House/Recreational youth hockey players to experience extra time on the ice while continuing skill development.</p>
-          <div class="card-actions justify-start">
-            <button class="  w-48 rounded-lg py-2 bg-[#FF4240] text-white">Register Now!</button>
+        <!-- our new-product-section -->
+        <section class="text-center text-[#131318] mt-16 lg:mt-[100px]">
+          <h1 class="mb-[24px] font-extrabold text-4xl">Our New Products</h1>
+          <p class=" mb-[30px] text-sm font-semibold lg:px-[280px]">New product
+            is a detailed outline of what you're going to produce, who it's for,
+            the problems it will solve, how it will work, how much it will cost,
+            and much more</p>
+        </section>
+
+        <!-- new-products -->
+        <section
+          class="product-container grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 mt-20 gap-6 px-5">
+
+          <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
+
+            <div class="w-full bg-[#d2d2d4] lg:w-[180px]">
+              <img class="mx-auto w-full h-44 border-dashed border-gray-400 border-[2px] "
+                src="B-9 A-3 resources/Images/pic5.png" alt="jacket">
+            </div>
+
+            <div class="text">
+              <ul class="flex gap-3 mb-4">
+
+                <li><i
+                    class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i>
+                  &nbsp<span class="text-gray-400">5.0</span></li>
+                <li><i
+                    class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span
+                    class="text-gray-400">20</span></li>
+                <li><i
+                    class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span
+                    class="text-gray-400">300</span></li>
+              </ul>
+              <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup
+                Flags Football</h3>
+              <p class="mb-4 text-sm text-gray-500">Is your country competing in
+                the World Cup 2022? Well, <br>you are going to need World
+                Cup<br> 2022 flags to show support for your team .</p>
+              <ul class="flex flex-col lg:flex-row gap-3">
+                <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
+                <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp
+                  &nbsp<span class="text-sm text-gray-500"> Delivery Fee
+                    &nbsp:&nbsp Free</span></li>
+              </ul>
+            </div>
+
           </div>
-        </div>
-      </div>
 
-      <div class="card h-2/3 lg:w-[1170px] bg-base-100 shadow-xl image-full col-span-2">
-        <figure><img  src="B-9 A-3 resources/Images/pic4.png" alt="hockey" /></figure>
-        <div class="card-body pt-60 pl-10 pb-12">
-          <h2 class="card-title text-white text-2xl font-extrabold mb-4">Professional Program</h2>
-          <p class="text-sm mb-8">To become a pro hockey player, start playing at a young age, join a team or league, <br>invest in proper training, play at a high level, and get noticed by scouts. Combine<br> these steps with dedication, hard work.</p>
-          <div class="card-actions justify-start">
-            <button class=" w-48 rounded-lg py-2 bg-[#FF4240] text-white">Register Now!</button>
+          <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
+            <div class="w-full bg-[#ededed] lg:w-[180px]">
+              <img class="mx-auto w-full h-44 border-dashed border-gray-400 border-[2px] "
+                src="B-9 A-3 resources/Images/pic6.png" alt="jacket">
+            </div>
+            <div class="text">
+              <ul class="flex gap-3 mb-4">
+
+                <li><i
+                    class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i>
+                  &nbsp<span class="text-gray-400">5.0</span></li>
+                <li><i
+                    class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span
+                    class="text-gray-400">20</span></li>
+                <li><i
+                    class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span
+                    class="text-gray-400">300</span></li>
+              </ul>
+              <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup
+                Flags Football</h3>
+              <p class="mb-4 text-sm text-gray-500">Is your country competing in
+                the World Cup 2022? Well, <br>you are going to need World
+                Cup<br> 2022 flags to show support for your team .</p>
+              <ul class="flex flex-col lg:flex-row gap-3">
+                <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
+                <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp
+                  &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp
+                  Free</span></li>
+              </ul>
+            </div>
+
           </div>
-        </div>
-      </div>
-</div>
-</section>
-  <!-- our new-product-section -->
-  <section class="text-center font-[manrope] text-[#131318] mt-[100px]">
-    <h1 class="mb-[24px] font-extrabold text-4xl">Our New Products</h1>
-    <p class=" mb-[30px] text-sm font-semibold lg:px-[280px]">New product is a detailed outline of what you're going to produce, who it's for, the problems it will solve, how it will work, how much it will cost, and much more</p>
-</section>
 
-<!-- new-products -->
-  <div class="product-container grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 mt-20 gap-6 px-5">
+          <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
+            <div class="w-full bg-[#dfd4bb] lg:w-[180px]">
+              <img class="mx-auto w-full h-44 border-dashed border-gray-400 border-[2px] "
+                src="B-9 A-3 resources/Images/pic7.png" alt="jacket">
+            </div>
+            <div class="text">
+              <ul class="flex gap-3 mb-4">
 
-    <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
-  
-      <div class="image">
-        <img class=" border-dashed border-gray-300 border-[2px]" src="B-9 A-3 resources/Images/pic5.png" alt="jacket">
+                <li><i
+                    class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i>
+                  &nbsp<span class="text-gray-400">5.0</span></li>
+                <li><i
+                    class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span
+                    class="text-gray-400">20</span></li>
+                <li><i
+                    class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span
+                    class="text-gray-400">300</span></li>
+              </ul>
+              <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup
+                Flags Football</h3>
+              <p class="mb-4 text-sm text-gray-500">Is your country competing in
+                the World Cup 2022? Well, <br>you are going to need World
+                Cup<br> 2022 flags to show support for your team .</p>
+              <ul class="flex flex-col lg:flex-row gap-3">
+                <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
+                <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp
+                  &nbsp<span class="text-sm text-gray-500"> Delivery Fee
+                    &nbsp:&nbsp Free</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
+            <div class="w-full bg-[#d2d2d2] lg:w-[180px]">
+              <img class="mx-auto w-full h-44 border-dashed border-gray-400 border-[2px] "
+                src="B-9 A-3 resources/Images/pic8.png" alt="jacket">
+            </div>
+            <div class="text">
+              <ul class="flex gap-3 mb-4">
+
+                <li><i
+                    class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i>
+                  &nbsp<span class="text-gray-400">5.0</span></li>
+                <li><i
+                    class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span
+                    class="text-gray-400">20</span></li>
+                <li><i
+                    class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span
+                    class="text-gray-400">300</span></li>
+              </ul>
+              <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup
+                Flags Football</h3>
+              <p class="mb-4 text-sm text-gray-500">Is your country competing in
+                the World Cup 2022? Well, <br>you are going to need World
+                Cup<br> 2022 flags to show support for your team .</p>
+              <ul class="flex flex-col lg:flex-row gap-3">
+                <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
+                <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp
+                  &nbsp<span class="text-sm text-gray-500"> Delivery Fee
+                    &nbsp:&nbsp Free</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
+            <div class="w-full bg-[#eeeeee] lg:w-[180px]">
+              <img class="mx-auto w-full h-44 border-dashed border-gray-400 border-[2px] "
+                src="B-9 A-3 resources/Images/pic9.png" alt="jacket">
+            </div>
+            <div class="text">
+              <ul class="flex gap-3 mb-4">
+
+                <li><i
+                    class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i>
+                  &nbsp<span class="text-gray-400">5.0</span></li>
+                <li><i
+                    class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span
+                    class="text-gray-400">20</span></li>
+                <li><i
+                    class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span
+                    class="text-gray-400">300</span></li>
+              </ul>
+              <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup
+                Flags Football</h3>
+              <p class="mb-4 text-sm text-gray-500">Is your country competing in
+                the World Cup 2022? Well, <br>you are going to need World
+                Cup<br> 2022 flags to show support for your team .</p>
+              <ul class="flex flex-col lg:flex-row gap-3">
+                <li><span
+                    class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
+                <li><i
+                    class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp
+                  &nbsp<span class="text-sm text-gray-500"> Delivery Fee
+                    &nbsp:&nbsp Free</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
+            <div class="w-full bg-[#fefefe] lg:w-[180px]">
+              <img class="mx-auto w-full h-44 border-dashed border-gray-400 border-[2px] "
+                src="B-9 A-3 resources/Images/pic10.png" alt="jacket">
+            </div>
+            <div class="text">
+              <ul class="flex gap-3 mb-4">
+
+                <li><i
+                    class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i>
+                  &nbsp<span class="text-gray-400">5.0</span></li>
+                <li><i
+                    class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span
+                    class="text-gray-400">20</span></li>
+                <li><i
+                    class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span
+                    class="text-gray-400">300</span></li>
+              </ul>
+              <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup
+                Flags Football</h3>
+              <p class="mb-4 text-sm text-gray-500">Is your country competing in
+                the World Cup 2022? Well, <br>you are going to need World
+                Cup<br> 2022 flags to show support for your team .</p>
+              <ul class="flex flex-col lg:flex-row gap-3">
+                <li><span
+                    class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
+                <li><i
+                    class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp
+                  &nbsp<span class="text-sm text-gray-500"> Delivery Fee
+                    &nbsp:&nbsp Free</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- client-question-section -->
+        <section class=" pb-6 lg:pb-12  text-center text-[#131318] mt-16  lg:mt-[100px]">
+          <h1 class="mb-[24px] font-extrabold text-4xl">Clients Question</h1>
+          <p class=" mb-[30px] text-sm font-semibold lg:px-[280px]">By telling the person an answer, you are unable to gather the relevant information needed to best help your teammate, player, parent, child, etc</p>
+        </section>
+
+        <section class="flex flex-col lg:flex-row gap-10">
+
+          <div class="">
+            <img src="B-9 A-3 resources/Images/pic11.png">
+          </div>
+          <div class="">
+             <div class="our-equipment">
+              <h1 class="pb-2 text-xl font-bold text-[#131318]">Our Equipment</h1>
+              <p >When it comes to preventing serious injuries,<br> this is the most important piece of equipment Skates. As with helmets, be sure to get skates that fit well</p>
+             </div>
+
+            <div class="collapse collapse-plus bg-white rounded-none">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-medium">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div><hr>
+            <div class="collapse collapse-plus bg-white rounded-none">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div><hr>
+            <div class="collapse collapse-plus bg-white rounded-none">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Ski Touring
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div><hr>
+            <div class="collapse collapse-plus bg-white rounded-none">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div><hr>
+
+            <div class="collapse collapse-plus bg-white rounded-none">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-medium">
+                pricings
+              </div>
+              <div class="collapse-content"> 
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- get-in-touch-section -->
+        <section class="text-center font-[manrope] text-[#131318] mt-16 lg:mt-[100px]">
+          <h1 class="mb-6 font-extrabold text-4xl">Get In Touch</h1>
+          <p class=" mb-7 text-sm font-semibold mx-7 lg:px-[280px] ">Two minutes
+            for minor infractions. Skills required to play floor hockey include
+            passing, receiving passes, shooting, stick handling, defensive
+            skills and goaltending.</p>
+        </section>
+
+        <section class=" pt-16 lg:pt-20 mx-5">
+          <div class="touch-container flex flex-col lg:flex-row gap-16">
+
+            <div class="container-left flex flex-col gap-6 bg-[#ffffff] rounded-xl shadow-sm shadow-gray-300 p-4 ">
+              <div class="container-body1 w-full lg:w-[310px] bg-[#f8fdf0] pl-8 pt-8 pb-12  rounded-xl">
+                <img src="B-9 A-3 resources/Images/call.png" alt>
+                <p>Phone Number :</p>
+                <p>
+                  (+62) 123-321-543</p>
+              </div>
+              <div class="container-body2 w-full lg:w-[310px] rounded-xl  bg-[#f8fdf0] pl-8 pt-8 pb-12">
+                <img src="B-9 A-3 resources/Images/letter.png" alt>
+                <p>Email:</p>
+                <p>hockeys@support.com</p>
+              </div>
+              <div class="container-body3 w-full lg:w-[310px] rounded-xl bg-[#f8fdf0] pl-8 pt-8 pb-12">
+                <img src="B-9 A-3 resources/Images/map.png" alt>
+                <p>Location:</p>
+                <p>123/4 mirpur-02</p>
+              </div>
+            </div>
+
+
+          <div class="container-right">
+
+            
+          <div class="ml-30 right-input grid grid-cols-1 lg:grid-cols-2">
+
+            <div class="input1 ">
+              <label class="font-semibold text-[#131318] font">Your Name</label><br>
+                <input class=" w-full lg:w-[324px] input outline-none border-none bg-gray-100 rounded-xl text-sm" type="text" placeholder="Enter your full name">
+           
+            </div>
+            <div class="input2">
+              <label class="font-semibold text-[#131318] font">Your Email</label><br>
+              <input class="  w-full lg:w-[324px] input outline-none border-none bg-gray-100 rounded-xl text-sm " type="text" placeholder="Enter your email">
+          </div>
+           
+            <div class="input3">
+              <label class="font-semibold text-[#131318] font">Subject</label><br>
+              <input class=" w-full lg:w-[324px] input outline-none border-none bg-gray-100 rounded-xl text-sm" type="text" placeholder="Enter your subject">
+         
+          </div>
+          
+            <div class="input4 ">
+              <label class="font-semibold text-[#131318] font">Phone number</label><br>
+              <input class="w-full lg:w-[324px] input outline-none border-none bg-gray-100 rounded-xl text-sm" type="text" placeholder="Enter your phone number">
+         
+          </div><br>
+          </div>
+            
+            <div class="input5 mb-8">
+              <label class="font-semibold text-[#131318] font">Message</label><br>
+              <textarea class="textarea w-full  lg:w-[670px] lg:h-[370px] outline-none border-none bg-gray-100 rounded-xl text-sm" name="" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
+            </div>
+            <div class="input6">
+              <button class="w-full lg:w-[670px] px-auto py-2 bg-[#FF4240] text-white rounded-xl text-xl">Send Message</button>
+            </div>
+          </div>
+            
+          </div>
+        </section>
+
+        <section class="h-[140px] lg:h-full text-center rounded-xl  bg-[#f8f8f8] text-[#131318] mt-[38px] pt-[35px] pb-[100px]">
+          <!-- social-media-section -->
+
+          <h1 class="text-2xl font-semibold mb-6">Social Media</h1>
+        <ul class="flex justify-center gap-8">
+          <li><a href="https://www.twitter.com"><i class=" text-2xl fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://www.facebook.com"></a><i class=" text-2xl fa-brands fa-facebook-f"></i></li>
+          <li><a href="https://ww"></a><i class="text-2xl fa-brands fa-instagram"></i></li>
+          <li><a href="https://www.github.com"></a><i class="text-2xl fa-brands fa-github"></i></li>
+        </ul>
+
+        </section>
+      </main>
+    </div>
+
+    <footer class=" w-[280px] mt-10 text-center mx-auto pt-10  pb-10 lg:w-[1440px] lg:mx-auto text-white bg-[#131318]  lg:pt-[100px]">
+     <!-- <div class="grid grid-cols-4 gap-6  ">
       
+      <div class="footer-1 col-span-4 lg:col-span-1 border-2 border-white">
+        <h1 class="text-2xl font-bold mb-4">Get in touch</h1>
+        <p class="text-[#FFFFFF99] mb-6">Two minutes for minor infractions. Skills required to play<br> floor hockey include passing, receiving passes, shooting, stick handling, defensive skills and goaltending</p>
+        <p class="text-[16px] mb-1 text-[#FFFFFF99]"><i class="text-2xl  text-red-600 fa-regular fa-envelope"></i>&nbsp hockeys@support.com</p>
+        <p class="text-[16px] text-[#FFFFFF99]"><i class="text-2xl  text-red-600 fa-solid fa-phone"></i>&nbsp (+62) 123-321-543</p>
       </div>
-      <div class="text">
-        <ul class="flex gap-3 mb-4">
-         
-         <li><i class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i> &nbsp<span class="text-gray-400">5.0</span></li>
-         <li><i class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span class="text-gray-400">20</span></li>
-         <li><i class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span class="text-gray-400">300</span></li>
-        </ul>
-        <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup Flags Football</h3>
-        <p class="mb-4 text-sm text-gray-500">Is your country competing in the World Cup 2022? Well, <br>you are going to need World Cup<br> 2022 flags to show support for your team .</p>
-      <ul class="flex gap-3">
-        <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
-        <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp Free</span></li>
-      </ul>
+
+      <div class="footer-2 col-span-2 lg:col-span-1 border-2 border-white">
+        <h1 class="text-white text-2xl font-bold mb-4">Company</h1>
+      <div class="text-[16px] text-[#FFFFFF99] space-y-2">
+        <p>About US</p>
+        <p>Leadership</p>
+        <p>Careers</p>
+        <p>News & Article</p>
+        <p>Legal Notice</p>
       </div>
+      </div>
+      <div class="footer-3 col-span-2 lg:col-span-1 border-2 border-white">
+        <h1 class="text-white text-2xl font-bold mb-4 ">Support</h1>
+        <div class="text-[16px] text-[#FFFFFF99] space-y-2">
+          <p>Help Center</p>
+          <p>FAQ</p>
+          <p>Ticket Support</p>
+          <p>Contact Us</p>
+          
+        </div>
+      </div>
+      <div class="footer-4 col-span-4 lg:col-span-1 border-2 border-white">
+        <h1 class="text-white text-2xl font-bold mb-4">Service</h1>
+        <div class="text-[16px] text-[#FFFFFF99] space-y-2">
+          <p>Accademy</p>
+          <p>Group Lesson</p>
+          <p>Private Lesson</p>
+          <p>Hockeys for kids</p>
+          <p>Hockeys for Adult</p>
+          
+        </div>
+      </div>
+     </div>
+    -->
+    
+    <div class="flex flex-col lg:flex-row  lg:justify-between gap-10 lg:px-24  lg:text-left ">
+      
+      <div class="footer-1 ">
+        <h1 class="text-[18px] font-bold mb-4">Get in touch</h1>
+        <p class="text-[#FFFFFF99] mb-6">Two minutes for minor infractions. <br>Skills required to play<br> floor hockey include passing, receiving passes,<br> shooting, stick handling, defensive skills and goaltending</p>
+        <p class="text-[16px] mb-1 text-[#FFFFFF99]"><i class="text-2xl  text-red-600 fa-regular fa-envelope"></i>&nbsp hockeys@support.com</p>
+        <p class="text-[16px] text-[#FFFFFF99]"><i class="text-2xl  text-red-600 fa-solid fa-phone"></i>&nbsp (+62) 123-321-543</p>
+      </div>
+
+      <div class="parent-div flex gap-14 lg:pr-10 ">
+        <div class="footer-2  ">
+          <h1 class="text-white text-[18px] font-bold mb-4">Company</h1>
+        <div class="text-[16px] text-[#FFFFFF99] space-y-2">
+          <p>About US</p>
+          <p>Leadership</p>
+          <p>Careers</p>
+          <p>News & Article</p>
+          <p>Legal Notice</p>
+        </div>
+        </div>
   
-    </div>
+        <div class="footer-3 ">
+          <h1 class="text-white text-[18px] font-bold mb-4 ">Support</h1>
+          <div class="text-[16px] text-[#FFFFFF99] space-y-2">
+            <p>Help Center</p>
+            <p>FAQ</p>
+            <p>Ticket Support</p>
+            <p>Contact Us</p>
+            
+          </div>
+        </div>
+      </div>
 
-    <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
-      <div class="image">
-        <img class="border-dashed border-gray-300 border-[2px]" src="B-9 A-3 resources/Images/pic6.png" alt="jacket">
+      <div class="footer-4   border-white">
+        <h1 class="text-white text-[18px] font-bold mb-4">Service</h1>
+        <div class="text-[16px] text-[#FFFFFF99] space-y-2">
+          <p>Accademy</p>
+          <p>Group Lesson</p>
+          <p>Private Lesson</p>
+          <p>Hockeys for kids</p>
+          <p>Hockeys for Adult</p>
+        </div>
       </div>
-      <div class="text">
-        <ul class="flex gap-3 mb-4">
-         
-         <li><i class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i> &nbsp<span class="text-gray-400">5.0</span></li>
-         <li><i class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span class="text-gray-400">20</span></li>
-         <li><i class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span class="text-gray-400">300</span></li>
-        </ul>
-        <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup Flags Football</h3>
-        <p class="mb-4 text-sm text-gray-500">Is your country competing in the World Cup 2022? Well, <br>you are going to need World Cup<br> 2022 flags to show support for your team .</p>
-      <ul class="flex gap-3">
-        <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
-        <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp Free</span></li>
-      </ul>
-      </div>
-  
-    </div>
-
-    <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
-      <div class="image">
-        <img class="border-dashed border-gray-300 border-[2px]" src="B-9 A-3 resources/Images/pic7.png" alt="jacket">
-      </div>
-      <div class="text">
-        <ul class="flex gap-3 mb-4">
-         
-         <li><i class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i> &nbsp<span class="text-gray-400">5.0</span></li>
-         <li><i class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span class="text-gray-400">20</span></li>
-         <li><i class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span class="text-gray-400">300</span></li>
-        </ul>
-        <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup Flags Football</h3>
-        <p class="mb-4 text-sm text-gray-500">Is your country competing in the World Cup 2022? Well, <br>you are going to need World Cup<br> 2022 flags to show support for your team .</p>
-      <ul class="flex gap-3">
-        <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
-        <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp Free</span></li>
-      </ul>
-      </div>
-  
-    </div>
-
-    <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
-      <div class="image">
-        <img class="border-dashed border-gray-300 border-[2px]" src="B-9 A-3 resources/Images/pic8.png" alt="jacket">
-      </div>
-      <div class="text">
-        <ul class="flex gap-3 mb-4">
-         
-         <li><i class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i> &nbsp<span class="text-gray-400">5.0</span></li>
-         <li><i class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span class="text-gray-400">20</span></li>
-         <li><i class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span class="text-gray-400">300</span></li>
-        </ul>
-        <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup Flags Football</h3>
-        <p class="mb-4 text-sm text-gray-500">Is your country competing in the World Cup 2022? Well, <br>you are going to need World Cup<br> 2022 flags to show support for your team .</p>
-      <ul class="flex gap-3">
-        <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
-        <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp Free</span></li>
-      </ul>
-      </div>
-  
-    </div>
-
-    <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
-      <div class="image">
-        <img class="border-dashed border-gray-300 border-[2px]" src="B-9 A-3 resources/Images/pic9.png" alt="jacket">
-      </div>
-      <div class="text">
-        <ul class="flex gap-3 mb-4">
-         
-         <li><i class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i> &nbsp<span class="text-gray-400">5.0</span></li>
-         <li><i class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span class="text-gray-400">20</span></li>
-         <li><i class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span class="text-gray-400">300</span></li>
-        </ul>
-        <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup Flags Football</h3>
-        <p class="mb-4 text-sm text-gray-500">Is your country competing in the World Cup 2022? Well, <br>you are going to need World Cup<br> 2022 flags to show support for your team .</p>
-      <ul class="flex gap-3">
-        <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
-        <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp Free</span></li>
-      </ul>
-      </div>
-  
-    </div>
-
-    <div class="flex flex-col items-center lg:flex-row md:flex-col gap-5">
-      <div class="image">
-        <img class="border-dashed border-gray-300 border-[2px]" src="B-9 A-3 resources/Images/pic10.png" alt="jacket">
-      </div>
-      <div class="text">
-        <ul class="flex gap-3 mb-4">
-         
-         <li><i class="text-[#F99808] border-dashed border-gray-300 border-[1.5px] fa-sharp fa-solid fa-star"></i> &nbsp<span class="text-gray-400">5.0</span></li>
-         <li><i class=" text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-eye"></i>&nbsp<span class="text-gray-400">20</span></li>
-         <li><i class="text-gray-300 border-dashed border-gray-300 border-[1.5px] fa-solid fa-heart"></i>&nbsp<span class="text-gray-400">300</span></li>
-        </ul>
-        <h3 class="mb-3 text-xl font-extrabold text-[#131318]">World Cup Flags Football</h3>
-        <p class="mb-4 text-sm text-gray-500">Is your country competing in the World Cup 2022? Well, <br>you are going to need World Cup<br> 2022 flags to show support for your team .</p>
-      <ul class="flex gap-3">
-        <li><span class="text-[#FF4240] text-lg font-extrabold">Price-$22.00</span></li>
-        <li><i class="text-gray-400 fa-sharp fa-solid fa-cart-shopping"></i>&nbsp &nbsp<span class="text-sm text-gray-500"> Delivery Fee &nbsp:&nbsp Free</span></li>
-      </ul>
-      </div>
-  
-    </div>
-
-  </div>
-    </main>
-   </div>
-    <footer>
-
-    </footer>
-</body>
+     </div>
+   
+  </footer>
+  </body>
 </html>
